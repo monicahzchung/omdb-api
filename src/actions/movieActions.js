@@ -10,7 +10,7 @@ export const changeSearch = input => dispatch => {
 
 export const retrieveMovies = input => dispatch => {
     let apiKey = '7a01915b';
-    let url = `http://www.omdbapi.com/?s=${input}&apikey=${apiKey}&type=movie`;
+    let url = `https://www.omdbapi.com/?s=${input}&apikey=${apiKey}&type=movie`;
     axios
         .get(url)
         .then(response => 
