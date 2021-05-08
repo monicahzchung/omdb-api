@@ -6,7 +6,7 @@ import { removeNomination } from '../actions/nominationActions';
 class NominationList extends Component {
     render(){
         return (
-            <div>
+            <div className='nominationList'>
                 {this.props.nominations.map((nomination, index) => <Nomination key={index} movie={nomination}/>)}
             </div>
         )
