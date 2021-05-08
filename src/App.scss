@@ -1,1 +1,92 @@
 @import 'bootstrap/scss/bootstrap';
+
+$main-background: #fbf7ed;
+$main-fonts: sans-serif;
+
+$button-color: #1f4e40; 
+$shopify-bag-color: #95bf47;
+
+body {
+    background: $main-background;
+    font-family: $main-fonts;
+}
+
+h6 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h5 {
+    text-align: center;
+    padding: 30px;
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+.button1{
+    background: $button-color;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20;
+    padding:15px;
+}
+
+.button2{
+    background: $shopify-bag-color;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20;
+    padding:15px;
+}
+
+#slogan{
+    color: $button-color;
+    font-weight: bold;
+    padding-top: 150px;
+    padding-bottom: 25px;
+    font-size: 70px;
+
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    margin: auto;
+  }
+  
+  
+  .movie:hover .overlay {
+    opacity: 1;
+    background-color: $shopify-bag-color;
+    
+  }
+
+a {
+    text-decoration: none !important;
+    color: $button-color;
+ }
+

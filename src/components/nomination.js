@@ -15,7 +15,7 @@ class Nomination extends Component {
         return (
             <div>
                 <h1>{nomination.Title}</h1>
-                <button onClick={this.handleClick}>Remove</button>
+                <button className='button1' onClick={this.handleClick}>Remove</button>
             </div>
         )
     };

@@ -2,13 +2,19 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import SearchBox from './searchBox';
 import MovieResults from './movieResults';
+import Slogan from './slogan'
+import 'bootstrap';
 
 class Landing extends Component {
     render(){
         return(
             <>
-                <SearchBox />
-                <MovieResults />
+                <Slogan />
+                <div className='container'>
+                    <SearchBox />
+                    <MovieResults />
+                </div>
+                
             </>
         )
     }

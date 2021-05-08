@@ -1,10 +1,12 @@
 import { Component } from 'react';
-import { HashRouter as Router, Route} from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import 'bootstrap';
+import './App.scss';
 import NavBar from './components/navBar';
 import NominationList from './components/nominationList';
 import Landing from './components/landing';
 import NominationsDone from './components/modal';
+import Footer from './components/footer';
 
 class App extends Component {
   render(){
@@ -15,6 +17,7 @@ class App extends Component {
           <NominationsDone />
           <Route exact path='/' component ={Landing} />
           <Route exact path='/nominations' component={NominationList} />
+          <Footer />
         </div>
       </Router>
     )

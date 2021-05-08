@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { addNomination } from '../actions/nominationActions';
+import logo from '../unavailable.png';
 import 'bootstrap';
 
 class Movie extends Component {
@@ -15,10 +16,16 @@ class Movie extends Component {
     render(){
         let returnedMovie = this.props.movie;
         return (
-            <div className='col-md-4 mb-5 '>
-                    <img className='img-responsive' src={returnedMovie.Poster} width='350' height='450' alt='Poster Unavailable'></img>
-                    {this.props.imdbID.indexOf(returnedMovie.imdbID) >= 0 || this.props.nominations.length >= 5 ? 
-                        <button disabled>Add</button> : <button onClick={this.handleClick}>Add</button>}
+            <div className='col mb-5'>
+                <div className='movie'>
+                        <img className='img-responsive' src={returnedMovie.Poster} width='300' height='450' alt={logo}></img>
+                        <div className='overlay'>
+                            <h6>{returnedMovie.Title + ' (' + returnedMovie.Year + ')'}</h6>
+                            {this.props.nominations.length >= 5 ? <button hidden></button> : 
+                        this.props.imdbID.indexOf(returnedMovie.imdbID) >= 0 ?<button className='button2' disabled>Nominated</button> 
+                        : <button className='button1' onClick={this.handleClick}>Nominate</button>}
+                        </div>
+                </div>
             </div>
         )
     }
