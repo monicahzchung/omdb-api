@@ -1,14 +1,22 @@
 import { Component } from 'react';
-import SearchBox from './components/searchBox';
-import MovieResults from './components/movieResults';
+import { HashRouter as Router, Route} from 'react-router-dom';
+import 'bootstrap';
+import NavBar from './components/navBar';
+import NominationList from './components/nominationList';
+import Landing from './components/landing';
+import NominationsDone from './components/modal';
 
 class App extends Component {
   render(){
     return (
-      <div className='container'>
-        <SearchBox />
-        <MovieResults />
-      </div>
+      <Router>
+        <NavBar />
+        <div className='container'>
+          <NominationsDone />
+          <Route exact path='/' component ={Landing} />
+          <Route exact path='/nominations' component={NominationList} />
+        </div>
+      </Router>
     )
   };
 };

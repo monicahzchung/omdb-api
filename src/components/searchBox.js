@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import 'bootstrap';
 import { changeSearch, retrieveMovies } from '../actions/movieActions';
+import 'bootstrap';
 
 class SearchBox extends Component {
     constructor(props){
