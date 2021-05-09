@@ -17,7 +17,7 @@ class Nomination extends Component {
         return (
             <div className='container'>
                 <div className='nomination'>
-                    <div className='row'>
+                    <div className='row row-cols-2'>
                         <div className='col-4'>
                         <a href={'https://www.imdb.com/title/' + nomination.imdbID + '/'}>
                             <img className='img-responsive' src={nomination.Poster} alt={logo}></img> 
