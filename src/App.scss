@@ -7,8 +7,27 @@ $button-color: #1f4e40;
 $shopify-bag-color: #95bf47;
 
 body {
-    background: $main-background;
+    background: white;
     font-family: $main-fonts;
+}
+
+
+
+// fonts
+
+h1 {
+    font-size: 50px;
+}
+
+
+h4 {
+    font-size: 20px;
+    color: #8a8f93;
+}
+
+h5 {
+    text-align: center;
+    padding: 30px;
 }
 
 h6 {
@@ -22,17 +41,11 @@ h6 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
 }
 
-h5 {
-    text-align: center;
-    padding: 30px;
-}
 
-form {
-    padding-bottom: 20px;
-}
+
+// buttons
 
 .button1{
     background: $button-color;
@@ -52,19 +65,30 @@ form {
     padding:15px;
 }
 
-#slogan{
+// navbar and footer
+
+.footer {
+    padding: 30px;
+}
+
+.navbar.sticky-top {
+    padding: 10px;
+    background-color: $main-background
+}
+
+
+
+.slogan{
     color: $button-color;
     font-weight: bold;
     padding-top: 150px;
     padding-bottom: 25px;
     font-size: 70px;
-
+    border-radius: 8px;
 }
 
-.navbar {
-    padding: 30px;
-}
 
+// overlay
 .overlay {
     position: absolute;
     top: 0;
@@ -84,6 +108,7 @@ form {
     background-color: $shopify-bag-color;
     
   }
+  
 
 a {
     text-decoration: none !important;
@@ -95,16 +120,31 @@ a {
      padding-top:50px;
  }
 
- h2 {
-     font-size: 25px;
-     color: black;
-     font-weight: bold;
+
+
+// posters
+ .poster {
+     width: 100%;
+     height: 450px;
  }
 
- h4 {
-     font-size: 20px;
-     color: black;
+ .nominationPoster {
+    width:100%;
+    height:250px;
+}
+
+
+
+ .btn.btn-dark {
+     font-size: 15px;
+     color: white;
  }
 
 
- 
+
+// modal
+ .modalHeader {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}

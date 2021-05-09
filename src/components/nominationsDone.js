@@ -19,16 +19,16 @@ class NominationsDone extends Component {
         return (
             <Modal show={this.props.show} onHide={this.handleClick}>
                 <Modal.Header closeButton>
-                    <Modal.Title>The Shoppies</Modal.Title>
+                    <h2>the shoppies</h2>
                 </Modal.Header>
                     <Modal.Body>You have completed your nominations!</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={this.handleClick}>
+                    <button type='button' className='btn btn-light' onClick={this.handleClick}>
                         Close
-                    </Button>
-                    <Button variant="primary" onClick={this.handleClick}>
+                    </button>
+                    <button type='button' className='btn btn-light' onClick={this.handleClick}>
                         <Link to='/nominations'>Go to your nominations!</Link>
-                    </Button>
+                    </button>
                 </Modal.Footer>
             </Modal>
         )

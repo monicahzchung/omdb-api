@@ -13,6 +13,13 @@ const movieReducer = (state = defaultState, action) => {
                 input: action.payload
             }
         case RETRIEVE_MOVIES:
+            console.log(action.payload);
+            if (action.payload.Response === 'False'){
+                return {
+                    ...state,
+                    movieList: []
+                }
+            }
             return {
                 ...state,
                 movieList: action.payload

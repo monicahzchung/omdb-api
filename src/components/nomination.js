@@ -18,13 +18,13 @@ class Nomination extends Component {
             <div className='container'>
                 <div className='nomination'>
                     <div className='row'>
-                        <div className='col'>
-                        <h2>{nomination.Title + ' (' + nomination.Year + ')'}</h2>
+                        <div className='col-4'>
                         <a href={'https://www.imdb.com/title/' + nomination.imdbID + '/'}>
                             <img className='img-responsive' src={nomination.Poster} alt={logo}></img> 
                         </a>
                         </div>
-                        <div className='col'>
+                        <div className='col-8'>
+                            <h2>{nomination.Title + ' (' + nomination.Year + ')'}</h2>
                             <h4>{nomination.Director}</h4>
                             <h4>{nomination.Runtime}</h4>
                             <h4>{nomination.Rated}</h4>

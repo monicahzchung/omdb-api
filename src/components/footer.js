@@ -1,17 +1,13 @@
-import { Component } from 'react';
+import 'bootstrap';
 
-class Footer extends Component {
-    render(){
-        return (
-            <nav className="navbar">
-                <div className='footer'>
+const Footer = () => {
+    return (
+        <div className='footer'>
                     <a href='https://www.omdbapi.com/'>
-                        <h5>Powered by OMDB API</h5>
+                        <h5>Powered by the OMDb API</h5>
                     </a>
-                </div>
-            </nav>
-        )
-    }
+        </div>
+    )
 }
 
 export default Footer;
