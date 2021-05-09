@@ -9,7 +9,7 @@ class NominationList extends Component {
         let nominations = this.props.nominations;
         let nominationList = '';
         nominationList = nominations.length > 0 ? <div className='row'>
-            <h1>Your Nomination List</h1>
+            <div className='slogan'>Your Nomination List</div>
             {nominations.map((nomination, index) => <Nomination key={index} movie={nomination}/>)}</div> :
             <Link to='/'><div className='slogan'>Go nominate your favourite movies</div></Link>;
     
